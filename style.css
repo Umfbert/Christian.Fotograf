@@ -9,7 +9,10 @@ body{
     box-sizing: border-box;
     margin: 0px;
     padding: 3em;
-
+    position: relative;
+}
+.container.nopadding{
+    padding: 0;
 }
 
 .container.full-screen{
@@ -112,5 +115,48 @@ background-color: #FCFFF2;
     font-size: 2em;
 }
 .menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
 
+.menu-box>img{
+    width:350px;
+    background-color: black;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    display: inline-block;
+    top: -40px;
+}
+
+.menu-box{
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    height: 60px;
+    background-color: black;
+    
+}
+
+.welcome-text{
+    background-color: rgba(75, 75, 75, 0.5);
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    width: 25%;
+    font-size: 18;
+    padding: 1em;
+    padding-top: 3em;
+    
+    
+
+}
+
+.welcome-text h1{
+    font-family: 'Abril Fatface', cursive;
+    color: whitesmoke;
 }
