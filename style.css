@@ -34,12 +34,12 @@ body{
 }
 
 .container.light-bg {
-    background-color: #ADB267;
+    background-color: #B2B2AF;
 
 }
 
 .container.dark-bg {
-    background-color: #FBFFC6;
+    background-color: #FCFFF2;
 }
 
 .velkommen {
@@ -76,7 +76,7 @@ h1 {
 
 .box-image{
     background-color: thistle;
-    height: 200px;
+    height: 400px;
     overflow: hidden;
 }
 
@@ -95,7 +95,7 @@ h1 {
 }
 
 .container.bg-bottom {
-background-color: #F9FFAD;
+background-color: #FCFFF2;
 }
 
 .container.flex{
@@ -112,12 +112,5 @@ background-color: #F9FFAD;
     font-size: 2em;
 }
 .menu{
-    /*background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0));
-   */ padding-top: 2em;
-    padding-bottom: 2em;
-    padding-left: 5em;
-    position: fixed;
-    float: left;
-    width:100vw;
-    z-index: 10;
+
 }
