@@ -1,116 +1,51 @@
 body{
-    padding: 0px;
-    margin: 0px;
-    overflow-x: hidden;
-
+    padding: 0;
+    margin: 0;
 }
+
 .container{
     width: 100vw;
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 3em;
-
-}
-
-.container.full-screen{
     height: 100vh;
+    position: relative;
+    padding: 0;
+    margin: 0;  
+    box-sizing: border-box;
 }
 
-.img-container{
+.container-image{
+    overflow: hidden;
     width: 100%;
     height: 100%;
-    background-color: white;
-    overflow: hidden;
     position: relative;
 }
 
-.img-container>img{
+.container-image>img{
     width: 100%;
-    position: relative;
-    left: 50%;
+}
+.overlay{
+    position: absolute;
+    z-index: 10;
+    width: 20%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.logo>img{
+    position: absolute;
+    width: 100%;
+}
+
+.list{
+    position: absolute;
     top: 50%;
-    transform: translate(-50%, -50%);
-
-}
-
-.container.light-bg {
-    background-color: #B2B2AF;
-
-}
-
-.container.dark-bg {
-    background-color: #FCFFF2;
-}
-
-.velkommen {
-    text-align: center;
-
-}
-
-h1 {
-    font-family: 'Poiret One', cursive;
-    font-size: 2.5em;
-}
-
-.velkommen>p{
-   width: 65%;
-   display: inline-block;
-   font-family: 'Quattrocento Sans', sans-serif;
-   font-size: 1.25em;
-} 
-
-.box-container{
-    display: flex;
-    justify-content: center;
-
-}
-.box {
-    display: inline-block;
-    width: 350px;
-    margin: 0.5em;
-    padding:0.3em;
-}
-.box>img{
-    width: 100%;
-}
-
-.box-image{
-    background-color: thistle;
-    height: 400px;
-    overflow: hidden;
-}
-
-.box-image>img{
-    width: 100%;
-}
-
-.box>h2{
-    font-family: 'Poiret One', cursive;  
-    font-size: 1.75em;
-}
-
-.box>p {
-    font-family: 'Quattrocento Sans', sans-serif;
-    font-size: 1.1em;
-}
-
-.container.bg-bottom {
-background-color: #FCFFF2;
-}
-
-.container.flex{
-    display: flex;
-    justify-content: center;
+    transform: translate(0,-50%);
+    right: 10px;
     
 }
-.flex>div{
-    width: 350px;
-    margin: 0.5em;
-    padding: 0.3em;
-}
-.sm{
-    font-size: 2em;
-}
-.menu{
 
+p{
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 35px;
+    color: white;
 }
