@@ -129,6 +129,10 @@ h2{
     font-size: 2em;
     text-decoration: none;
 }
+.so-me-logo > b {
+  font-size: 0.5em;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
 
 .so-me-logo>a{
     margin: 0.5em;
