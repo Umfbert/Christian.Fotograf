@@ -1,16 +1,24 @@
 body{
     padding: 0;
+    overflow-x: hidden;
     margin: 0;
 }
-
+/**
+  Container related 
+*/
 .container{
     width: 100vw;
-    height: 100vh;
     position: relative;
     padding: 0;
     margin: 0;  
     box-sizing: border-box;
     background: rgba( 0, 0, 0, 0.6);
+}
+.container.padding {
+  padding: 3em;
+}
+.container.full-screen {
+  height: 100vh;
 }
 
 .container-image{
@@ -66,6 +74,11 @@ h2{
     color: white;
 }
 
+/**
+
+  Info box related
+
+*/
 .info-box{
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
@@ -104,6 +117,11 @@ h2{
     color: white;
 }
 
+/**
+  
+  Social Media related
+
+*/
 .so-me{
     position: absolute;
     bottom: 3em;
