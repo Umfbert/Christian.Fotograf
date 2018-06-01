@@ -49,3 +49,77 @@ p{
     font-size: 35px;
     color: white;
 }
+h2{
+    font-family: 'Quattrocento Sans', sans-serif;
+    color: white;
+}
+
+.info-box{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    right: 3em;
+    bottom: 3em;
+    height: 20%;
+    width: 35%;
+    padding: 1em;
+    border-radius: 0,6em;
+}
+
+.info-box>p{
+    font-size: 16px;
+    margin: 1,5em;
+}
+
+.info-box-links{
+    position: absolute;
+    background-color: rgba( 0, 0, 0, 0.6);
+    bottom: 1em;
+    right: 1em;
+    width: 20%;
+    color: black;
+    text-align: center;
+    border-radius: 0.6em;
+    background-color: white;
+    padding: 0.25em;
+    box-shadow: 0px 3px 0px grey;
+    text-decoration: none;
+}
+
+.info-box-links:active{
+    transform: translateY(3px);
+    box-shadow: 0px 0px 0px darkgreen;
+    background-color: black;
+    color: white;
+}
+
+.so-me{
+    position: absolute;
+    bottom: 3em;
+    height: 20%;
+    color: white;
+
+}
+
+.so-me>p{
+    font-size: 16px;
+    color: white;
+    margin: 1.5em;
+    display: block;
+    text-align: center;
+ 
+}
+
+.so-me-logo{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.so-me-logo>a{
+    margin: 0.5em;
+    color: white;
+    text-decoration: none;
+}
