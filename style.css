@@ -1,3 +1,8 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
 body{
     padding: 0;
     overflow-x: hidden;
@@ -20,7 +25,12 @@ body{
 .container.full-screen {
   height: 100vh;
 }
-
+.container.min-third-screen {
+    min-height: 30vh;
+}
+.container.white-gradient {
+    background: linear-gradient(-25deg, #ffffff 10%, #dadada);
+}
 .container-image{
     overflow: hidden;
     width: 100%;
@@ -28,10 +38,6 @@ body{
     position: relative;
     transition: 600ms opacity linear 50ms;
     
-}
-
-.list > div > p {
-    cursor: pointer;
 }
 .container-image>img{
     width: 100%;
@@ -63,8 +69,10 @@ body{
     right: 10px;
     
 }
-
-p{
+.list > div > p {
+    cursor: pointer;
+}
+p.category-selector {
     font-family: 'Quattrocento Sans', sans-serif;
     font-size: 35px;
     color: white;
@@ -106,13 +114,13 @@ h2{
     border-radius: 0.6em;
     background-color: white;
     padding: 0.25em;
-    box-shadow: 0px 3px 0px grey;
+    box-shadow: 0 3px 0 grey;
     text-decoration: none;
 }
 
 .info-box-links:active{
     transform: translateY(3px);
-    box-shadow: 0px 0px 0px darkgreen;
+    box-shadow: 0 0 0 darkgreen;
     background-color: black;
     color: white;
 }
@@ -159,6 +167,11 @@ h2{
 }
 
 
+/**
+
+  Gallery 
+
+*/
 .duplicate-container {
     position: absolute;
     opacity: 0;
@@ -166,4 +179,71 @@ h2{
 
 .duplicate-container.show {
     opacity: 1;
+}
+
+
+/**
+
+    GETVERHERRIE
+
+*/
+.service-type {
+    font-family: 'Quattrocento Sans', sans-serif;
+     min-height: 50vh;
+     display: flex;
+}
+
+.service-type > .circle {
+    flex: 0 0 30vw;
+    order: 1;
+    position: relative;
+}
+.service-type > .circle > .img-container {
+    width: 20vw;
+    height: 20vw;
+
+    border: 1em white solid;
+    box-shadow: 0 0 3px gray;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+
+    overflow: hidden;
+    background-color: black;
+    border-radius: 20vw;
+    transition: 150ms border-radius ease-out 50ms;
+
+}
+
+.service-type > .circle > .img-container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    background-clip: border-box;
+}
+
+.service-type > .circle:hover > .img-container {
+    border-radius: 2em;
+
+}
+.service-type > .content {
+    flex: 1 1 auto;
+    order: 2;
+    padding: 3em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.service-type > .content > p {
+    font-size: 1em;
+    color: black;
+}
+.service-type.picture-right > .circle {
+    order: 3;
 }
