@@ -13,9 +13,11 @@ function startInterval() {
   console.log("interval", interval)
 }
 
+var timeout;
 function staggerImageInterval() {
   interval = clearInterval(interval);
-  setTimeout(startInterval, 20000);
+  clearTimeout(timeout);
+  timeout = setTimeout(startInterval, 30000);
 }
 
 startInterval();
